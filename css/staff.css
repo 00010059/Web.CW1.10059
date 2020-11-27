@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f3f4;
+}
+nav {
+  position: fixed;
+  width: 18vw;
+  height: 100vh;
+  background-color: #252537;
+}
+main {
+  height: auto;
+  width: 82vw;
+  float: right;
+}
+#logo {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 3vw;
+  left: 2vw;
+  position: relative;
+  font-family: sans-serif;
+}
+#logo-div {
+  width: 100%;
+  border-bottom: 2px solid #484866;
+  margin-top: 4vh;
+}
+.nav-list {
+  list-style: none;
+  margin-left: 2vw;
+}
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 2vw;
+  font-family: sans-serif;
+  line-height: 20vh;
+  width: 100%;
+}
+.list-item {
+  transition: 0.5s;
+}
+.list-item:hover {
+  transform: translateX(10px);
+}
+#lms {
+  font-size: 2vw;
+  color: white;
+  margin-right: 1vw;
+}
+#ask {
+  font-size: 2vw;
+  color: white;
+  margin-right: 1vw;
+}
+#title {
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  margin-top: 5vh;
+}
+table {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+th,
+td {
+  padding: 2vh 3vw 2vh;
+  font-size: 1.5vw;
+  border: 2px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+th {
+  background-color: rgb(37, 37, 73);
+  color: white;
+}
+td {
+  color: #475ac4;
+  animation: appear 2s;
+}
+#more {
+  margin-left: 45%;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 2vw;
+  background-color: #252549;
+  padding: 1vh 2vw 1vh;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+#more:hover {
+  box-shadow: 3px 3px 5px #666666;
+}
+footer {
+  width: 82vw;
+  height: 10rem;
+  float: right;
+  margin-top: 2rem;
+  background-color: #252537;
+}
+.footer-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  max-width: 50vw;
+  margin: 1.3rem auto;
+}
+.footer-item {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+}
+.copyright {
+  text-align: center;
+  color: rgb(190, 190, 190);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 800px) {
+  th,
+  td {
+    font-size: 2vw;
+  }
+}

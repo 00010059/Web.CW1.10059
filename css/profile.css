@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f3f4;
+}
+nav {
+  position: fixed;
+  width: 18vw;
+  height: 100vh;
+  background-color: #252537;
+}
+main {
+  height: auto;
+  width: 82vw;
+  float: right;
+}
+#logo {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 3vw;
+  left: 2vw;
+  position: relative;
+  font-family: sans-serif;
+}
+#logo-div {
+  width: 100%;
+  border-bottom: 2px solid #484866;
+  margin-top: 4vh;
+}
+.nav-list {
+  list-style: none;
+  margin-left: 2vw;
+}
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 2vw;
+  font-family: sans-serif;
+  line-height: 20vh;
+  width: 100%;
+}
+.list-item {
+  transition: 0.5s;
+}
+.list-item:hover {
+  transform: translateX(10px);
+}
+#lms {
+  font-size: 2vw;
+  color: white;
+  margin-right: 1vw;
+}
+#ask {
+  font-size: 2vw;
+  color: white;
+  margin-right: 1vw;
+}
+#title {
+  font-size: 5vw;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  margin-top: 5vh;
+}
+.flex-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 70vw;
+  margin: 4rem auto;
+  animation: show 1s;
+}
+.flip-card {
+  width: 18rem;
+  height: 45vh;
+  margin-bottom: 2rem;
+}
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card-front,
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 40px;
+}
+.card-front {
+  background-image: linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.front-title {
+  font-size: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+}
+.card-back {
+  background-image: linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+}
+#top {
+  margin-top: 3.5rem;
+}
+.key {
+  font-size: 1.5vw;
+  margin-left: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.value {
+  font-weight: 200;
+}
+.flip-card:hover .card-container {
+  transform: rotateY(180deg);
+}
+.flip-card2 {
+  width: 18rem;
+  height: 45vh;
+  margin-bottom: 2rem;
+}
+.card-container2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card-front2,
+.card-back2 {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 40px;
+}
+.card-front2 {
+  background-image: linear-gradient(135deg, #70f570 10%, #49c628 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.card-back2 {
+  background-image: linear-gradient(135deg, #70f570 10%, #49c628 100%);
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+}
+.flip-card2:hover .card-container2 {
+  transform: rotateY(180deg);
+}
+.flip-card3 {
+  width: 18rem;
+  height: 45vh;
+  margin-bottom: 2rem;
+}
+.card-container3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card-front3,
+.card-back3 {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 40px;
+}
+.card-front3 {
+  background-image: linear-gradient(135deg, #fd6e6a 10%, #ffc600 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.card-back3 {
+  background-image: linear-gradient(135deg, #fd6e6a 10%, #ffc600 100%);
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+}
+.flip-card3:hover .card-container3 {
+  transform: rotateY(180deg);
+}
+.flip-card4 {
+  width: 18rem;
+  height: 45vh;
+  margin-bottom: 2rem;
+}
+.card-container4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card-front4,
+.card-back4 {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 40px;
+}
+.card-front4 {
+  background-image: linear-gradient(135deg, #ff7af5 10%, #513162 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.card-back4 {
+  background-image: linear-gradient(135deg, #ff7af5 10%, #513162 100%);
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+}
+.flip-card4:hover .card-container4 {
+  transform: rotateY(180deg);
+}
+.flip-card5 {
+  width: 18rem;
+  height: 45vh;
+  margin-bottom: 2rem;
+}
+.card-container5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card-front5,
+.card-back5 {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 40px;
+}
+.card-front5 {
+  background-image: linear-gradient(135deg, #65fdf0 10%, #1d6fa3 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.card-back5 {
+  background-image: linear-gradient(135deg, #65fdf0 10%, #1d6fa3 100%);
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg);
+}
+.flip-card5:hover .card-container5 {
+  transform: rotateY(180deg);
+}
+footer {
+  width: 82vw;
+  height: 10rem;
+  float: right;
+  background-color: #252537;
+}
+.footer-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  max-width: 50vw;
+  margin: 1.3rem auto;
+}
+.footer-item {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+}
+.copyright {
+  text-align: center;
+  color: rgb(190, 190, 190);
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(-70px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .key {
+    font-size: 2vw;
+  }
+  .front-title {
+    font-size: 3vw;
+  }
+}
+@media all and (max-width: 700px) {
+  .key {
+    font-size: 3vw;
+  }
+  .front-title {
+    font-size: 3.5vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .key {
+    font-size: 4vw;
+  }
+  .front-title {
+    font-size: 5vw;
+  }
+  #title {
+    font-size: 8vw;
+  }
+}
+@media all and (max-width: 380px) {
+  .key {
+    font-size: 5vw;
+  }
+  .front-title {
+    font-size: 6vw;
+  }
+  #title {
+    font-size: 9vw;
+  }
+}
