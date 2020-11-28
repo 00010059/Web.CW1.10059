@@ -13,7 +13,7 @@ nav {
   background-color: #252537;
 }
 main {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 82vw;
   float: right;
 }
@@ -27,12 +27,29 @@ h1 {
   color: #475ac4;
   animation: welcome 3s;
 }
-#logo {
-  text-transform: uppercase;
-  text-decoration: none;
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 6vh;
+}
+.phone,
+.mail {
+  font-size: 1.5vw;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 1vh 2vw 1vh;
+  transition: 0.5s;
+}
+.phone:hover,
+.mail:hover {
+  background-color: #34344d;
   color: white;
-  font-size: 3vw;
-  left: 2vw;
+}
+#logo {
+  font-size: 4vw;
+  width: 7vw;
+  left: 5vw;
   position: relative;
   font-family: sans-serif;
 }
@@ -40,6 +57,7 @@ h1 {
   width: 100%;
   border-bottom: 2px solid #484866;
   margin-top: 4vh;
+  display: none;
 }
 .nav-list {
   list-style: none;
@@ -50,7 +68,7 @@ h1 {
   text-decoration: none;
   font-size: 2vw;
   font-family: sans-serif;
-  line-height: 20vh;
+  line-height: 17vh;
   width: 100%;
 }
 .list-item {
@@ -101,5 +119,44 @@ footer {
   }
   to {
     transform: scale(1);
+  }
+}
+@media all and (max-width: 800px) {
+  .phone,
+  .mail {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+  }
+  .contacts {
+    margin-bottom: 1vh;
+    flex-direction: column;
+    max-width: 37vw;
+    margin: auto;
+  }
+}
+@media all and (max-width: 450px) {
+  .show {
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+    z-index: 100000;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-item {
+    font-size: 5vw;
+  }
+  #logo-div {
+    display: block;
+  }
+  .footer-item {
+    font-size: 2.5vw;
+  }
+  .footer-list {
+    max-width: 70vw;
+  }
+  footer {
+    margin-top: 1rem;
   }
 }
