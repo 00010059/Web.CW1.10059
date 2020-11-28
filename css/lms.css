@@ -19,11 +19,9 @@ main {
   float: right;
 }
 #logo {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  font-size: 3vw;
-  left: 2vw;
+  font-size: 4vw;
+  width: 7vw;
+  left: 5vw;
   position: relative;
   font-family: sans-serif;
 }
@@ -31,6 +29,7 @@ main {
   width: 100%;
   border-bottom: 2px solid #484866;
   margin-top: 4vh;
+  display: none;
 }
 .nav-list {
   list-style: none;
@@ -41,9 +40,10 @@ main {
   text-decoration: none;
   font-size: 2vw;
   font-family: sans-serif;
-  line-height: 20vh;
+  line-height: 17vh;
   width: 100%;
 }
+
 .list-item {
   transition: 0.5s;
 }
@@ -228,6 +228,32 @@ footer {
 @media all and (max-width: 600px) {
   #title {
     font-size: 7vw;
+  }
+}
+@media all and (max-width: 450px) {
+  .show {
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+    z-index: 100000;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-item {
+    font-size: 5vw;
+  }
+  #logo-div {
+    display: block;
+  }
+  .footer-item {
+    font-size: 2.5vw;
+  }
+  .footer-list {
+    max-width: 70vw;
+  }
+  footer {
+    margin-top: 1rem;
   }
 }
 @media all and (max-width: 400px) {
